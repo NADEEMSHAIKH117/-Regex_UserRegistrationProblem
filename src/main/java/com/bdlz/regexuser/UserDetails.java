@@ -39,4 +39,15 @@ public class UserDetails {
 			System.out.println("Invalid");
 		}
 	}
+	
+	  public void mobileNumber(String mobileNumber) {
+	        regex = "^(\\d{1,3}[- ]?){1}\\d{9,10}$";
+	        Pattern pattern  = Pattern.compile(regex);
+	        Matcher matcher = pattern.matcher(mobileNumber);
+	        if (matcher.matches()) {
+	            System.out.println("Valid");
+	        } else {
+	            System.out.println("InValid");
+	        }
+	    }
 }
