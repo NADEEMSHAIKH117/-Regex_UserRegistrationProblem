@@ -52,7 +52,7 @@ public class UserDetails {
 	    }
 	  
 	  public void password(String password) {
-	        regex = "^[a-z]{8,}$";
+	        regex = "^[a-z](?=.*[a-z]).{8,}$";
 	        Pattern pattern = Pattern.compile(regex);
 	        Matcher matcher = pattern.matcher(password);
 	        if (matcher.matches()) {
