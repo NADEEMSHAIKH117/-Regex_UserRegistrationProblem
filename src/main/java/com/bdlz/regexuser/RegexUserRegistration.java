@@ -12,4 +12,10 @@ public class RegexUserRegistration {
 		String firstName = scanner.next();
 		userDetails.firstName(firstName);
 	}
+	
+	public void userLasttName() {
+		System.out.println("Enter your Last Name : ");
+		String lastName = scanner.next();
+		userDetails.lastName(lastName);
+	}
 }

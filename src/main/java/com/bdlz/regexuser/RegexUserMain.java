@@ -9,12 +9,17 @@ public class RegexUserMain {
 	
 	public void choice() {
 		while (true) {
-			System.out.println("*Enter 1 To Check First Name\n"
-					+ "*Enter 0 To Exit");
+			System.out.println("*Enter 1 To Check First Name");
+			System.out.println("*Enter 2 To Check Last Name");
+			System.out.println("*Enter 0 To Exit");
+			
 			int choice = scanner.nextInt();
 			switch (choice) {
 				case 1 :
 					regexUserRegistration.userFirstName();
+					break;
+				case 2 :
+					regexUserRegistration.userLasttName();
 					break;
 				case 0 :
 					System.exit(0);
