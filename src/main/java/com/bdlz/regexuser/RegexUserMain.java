@@ -11,6 +11,7 @@ public class RegexUserMain {
 		while (true) {
 			System.out.println("*Enter 1 To Check First Name");
 			System.out.println("*Enter 2 To Check Last Name");
+			System.out.println("*Enter 3 To Check Email Id");
 			System.out.println("*Enter 0 To Exit");
 			
 			int choice = scanner.nextInt();
@@ -20,6 +21,9 @@ public class RegexUserMain {
 					break;
 				case 2 :
 					regexUserRegistration.userLasttName();
+					break;
+				case 3 :
+					regexUserRegistration.userEmailId();
 					break;
 				case 0 :
 					System.exit(0);
