@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class RegexUserMain {
 	
 	RegexUserRegistration regexUserRegistration = new RegexUserRegistration();
+	TestSampleEmailIds testSampleEmailIds = new TestSampleEmailIds();
 	Scanner scanner = new Scanner(System.in);
 	
 	public void choice() {
@@ -14,6 +15,7 @@ public class RegexUserMain {
 			System.out.println("*Enter 3 To Check Email Id");
 			System.out.println("*Enter 4 To Check Mobile Number");
 			System.out.println("*Enter 5 To Check Password");
+			System.out.println("*Enter 6 TO Test The Sample EmailIds");
 			System.out.println("*Enter 0 To Exit");
 			
 			int choice = scanner.nextInt();
@@ -33,6 +35,9 @@ public class RegexUserMain {
 				case 5 :
 					regexUserRegistration.userPassword();
 					break;
+				case 6 :
+					sampleEmailIds();
+					break;
 				case 0 :
 					System.exit(0);
 					break;
@@ -42,6 +47,17 @@ public class RegexUserMain {
 			}
 		}
 	}
+	
+	 public void sampleEmailIds() {
+	        System.out.println("Enter 1 to Test Sample Emails");
+	        int option = scanner.nextInt();
+	        if (option == 1) {
+	            testSampleEmailIds.testForValidEmails();
+	            testSampleEmailIds.testForNonValidEmails();
+	        } else {
+	            System.out.println("Enter the wrong input \n Please enter the Correct input");
+	        }
+	    }
 
 	public static void main(String[] args) {
 		System.out.println("\n Welcome to User Registration Program by regex \n");
