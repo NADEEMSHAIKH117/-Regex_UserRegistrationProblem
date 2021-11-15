@@ -32,7 +32,7 @@ public class RegexUserRegistration {
     }
     
     public void userPassword() {
-        System.out.println("Enter your MobileNumber");
+        System.out.println("Enter your Password");
         String password = scanner.next();
         userDetails.password(password);
     }
